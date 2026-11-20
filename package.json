@@ -1,0 +1,26 @@
+{
+  "name": "van-ban-viet",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview",
+    "copy-tinymce": "node scripts/copy-tinymce.mjs",
+    "bundle-juice": "node scripts/build-juice.mjs",
+    "prepare": "npm run copy-tinymce"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.6",
+    "juice": "^11.0.1",
+    "tinymce": "^8.0.1",
+    "tinymce-i18n": "^26.11.2",
+    "@fontsource/tinos": "^5.2.5"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0"
+  }
+}
